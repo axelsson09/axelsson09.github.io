@@ -8,3 +8,5 @@ test.:/glosor/test/svenska.txt6:;
 test.:/glosor/test/svenska.txt7:;
 test.:/glosor/test/svenska.txt8:;
 test.:/glosor/test/svenska.txt9:;
+
+%%%
