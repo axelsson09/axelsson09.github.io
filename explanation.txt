@@ -6,3 +6,6 @@ Glostillgänglighetslista:
 % =slut på lista
 
 glos lista:
+övre svenska1
+% =delning
+undre tyska
