@@ -1,4 +1,7 @@
+Glostillgänglighetslista:
+
 . =slut på url prfix/vilka glosor
 : =allting som är i mellan är en url
 ; =slut på url
 % =slut på lista
+
