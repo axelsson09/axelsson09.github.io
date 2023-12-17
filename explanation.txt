@@ -5,3 +5,4 @@ Glostillgänglighetslista:
 ; =slut på url
 % =slut på lista
 
+glos lista:
