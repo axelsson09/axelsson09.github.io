@@ -9,3 +9,4 @@ glos lista:
 övre svenska1
 % =delning
 undre tyska
+& =slut på glosor
