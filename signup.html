@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Signup - Glosplugare</title>
+
+    <!-- Include Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js"></script>
+
+    <!-- Initialize Firebase with your configuration -->
+    <script>
+        var firebaseConfig = {
+            apiKey: "YOUR_API_KEY",
+            authDomain: "YOUR_AUTH_DOMAIN",
+            projectId: "YOUR_PROJECT_ID",
+            storageBucket: "YOUR_STORAGE_BUCKET",
+            messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+            appId: "YOUR_APP_ID"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Glosplugare</h1>
+        <p>Explore and learn new words.</p>
+    </header>
+
+    <nav>
+        <a href="download.html">Download</a>
+        <a href="login.html" class="login-link">Login</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Signup</h2>
+            <!-- Add your signup form here -->
+            <form>
+                <label for="newEmail">Email:</label>
+                <input type="email" id="newEmail" name="newEmail" required>
+                <br>
+                <label for="newPassword">Password:</label>
+                <input type="password" id="newPassword" name="newPassword" required>
+                <br>
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <br>
+                <button type="submit">Signup</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Glosplugare. All rights reserved.</p>
+    </footer>
+
+    <!-- Add Firebase Authentication Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.querySelector('form');
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevents the form from submitting normally
+
+                // Placeholder logic for demonstration purposes
+                const email = form.querySelector('[name="newEmail"]').value;
+                const password = form.querySelector('[name="newPassword"]').value;
+                const confirmPassword = form.querySelector('[name="confirmPassword"]').value;
+
+                // Use Firebase Authentication to create a new user
+                if (password === confirmPassword) {
+                    firebase.auth().createUserWithEmailAndPassword(email, password)
+                        .then(userCredential => {
+                            // User signed up
+                            const user = userCredential.user;
+                            alert('Signup successful!');
+                        })
+                        .catch(error => {
+                            // Handle errors
+                            alert(`Signup failed: ${error.message}`);
+                        });
+                } else {
+                    alert('Passwords do not match.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

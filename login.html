@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Login - Glosplugare</title>
+
+    <!-- Import Firebase modules as ES modules -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+        import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyDfQPOUIUyq24azM3Myu9aGEQuPhr1ul8Y",
+            authDomain: "glosplugare.firebaseapp.com",
+            projectId: "glosplugare",
+            storageBucket: "glosplugare.appspot.com",
+            messagingSenderId: "1080574481056",
+            appId: "1:1080574481056:web:19b3e75e958761db41afc5",
+            measurementId: "G-L8PMS3VFK2"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const auth = getAuth();
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Glosplugare</h1>
+        <p>Explore and learn new words.</p>
+    </header>
+
+    <nav>
+        <a href="download.html">Download</a>
+        <a href="login.html" class="login-link">Login</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Login</h2>
+            <!-- Add your login form here -->
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Glosplugare. All rights reserved.</p>
+    </footer>
+
+    <!-- Add Firebase Authentication Script -->
+    <script type="module">
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.querySelector('form');
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevents the form from submitting normally
+
+                // Placeholder logic for demonstration purposes
+                const email = form.querySelector('[name="email"]').value;
+                const password = form.querySelector('[name="password"]').value;
+
+                // Use Firebase Authentication to sign in
+                signInWithEmailAndPassword(auth, email, password)
+                    .then(userCredential => {
+                        // User signed in
+                        const user = userCredential.user;
+                        alert('Login successful!');
+                    })
+                    .catch(error => {
+                        // Handle errors
+                        alert(`Login failed: ${error.message}`);
+                    });
+            });
+        });
+    </script>
+</body>
+</html>
