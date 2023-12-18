@@ -29,10 +29,6 @@ nav a:hover {
     background-color: #555;
 }
 
-.login-link {
-    margin-left: auto; /* This will push the login link to the right */
-}
-
 main {
     padding: 1em;
 }
