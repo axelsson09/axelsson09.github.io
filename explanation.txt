@@ -6,7 +6,12 @@ Glostillgänglighetslista:
 % =slut på lista
 
 glos lista:
+
 första delen svenska
 % =delning
 andra delen tyska
 & =slut på glosor
+
+internaglosor
+0 =från wevserver
+1 =internaglosor
