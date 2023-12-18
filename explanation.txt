@@ -6,7 +6,7 @@ Glostillgänglighetslista:
 % =slut på lista
 
 glos lista:
-övre svenska1
+första delen svenska
 % =delning
-undre tyska
+andra delen tyska
 & =slut på glosor
