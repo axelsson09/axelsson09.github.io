@@ -1,1 +1,1 @@
-failed to retrieve words and read internal words
+failed to retrieve words and/or read internal words
