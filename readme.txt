@@ -1,9 +1,9 @@
-Glosplugare Setup
+Glospluggare Setup
 
-Thank you for downloading Glosplugare! Please follow the instructions below to install and get started.
+Thank you for downloading Glospluggare! Please follow the instructions below to install and get started.
 
 1. **Getting Started:**
-   - Once installed, launch Glosplugare from the Start Menu or the desktop shortcut.
+   - Once installed, launch Glospluggare from the Start Menu or the desktop shortcut.
 
 2. **Documentation:**
    - For detailed information and usage instructions, refer to the documentation.
@@ -15,6 +15,6 @@ Thank you for downloading Glosplugare! Please follow the instructions below to i
 4. **Updates:**
    - Stay informed about updates and new features by visiting our website or checking for updates within the application.
 
-Thank you for choosing Glosplugare! We hope you enjoy using our software.
+Thank you for choosing Glospluggare! We hope you enjoy using our software.
 
 For the latest information and updates, visit our website: https://axelsson09.github.io/
