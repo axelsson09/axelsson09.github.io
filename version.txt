@@ -1,1 +1,9 @@
-4.0.0
+v4.0.0&s0%
+
+bokstav = förklaring
+& = ny funktion
+% slut på funktioner /sluta läs
+
+bokstavs förklaring
+v= verision
+s= kan skipa
