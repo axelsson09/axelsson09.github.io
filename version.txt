@@ -1,4 +1,4 @@
-v4.0.0&s0%
+v5.0.0&s0%
 
 bokstav = förklaring
 & = ny funktion
