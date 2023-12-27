@@ -1,5 +1,6 @@
 # axelsson09.github.io
-
+> [!WARNING]
+> The program only contains specific words from Swedish to German.
 > [!NOTE]
 > does only work on pc, for now rest is being developed
 
