@@ -28,8 +28,8 @@ nav a:hover {
     background-color: #555;
 }
 
-nav a:active{
-    background-color: white;
+nav a:current{
+    background-color: gray;
 }
 
 
