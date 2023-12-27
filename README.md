@@ -5,7 +5,7 @@
 > [!NOTE]
 > does only work on pc, for now rest is being developed
 
-## What is :Glospluggare?
+## What is: "Glospluggare"?
 
 Glospluggare stands at the forefront of language learning innovation, offering a dynamic program that seamlessly connects users to a web server, unlocking a vast repository of words and phrases from different languages. This cutting-edge software redefines the language learning experience, leveraging technology to make the process interactive, engaging, and tailored to individual needs.
 
