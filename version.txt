@@ -1,5 +1,7 @@
 v5.0.0&s0%
 
+
+{
 bokstav = förklaring
 & = ny funktion
 % slut på funktioner /sluta läs
@@ -7,3 +9,4 @@ bokstav = förklaring
 bokstavs förklaring
 v= verision
 s= kan skipa
+}blir inte läst
