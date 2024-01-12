@@ -9,4 +9,4 @@ bokstav = förklaring
 bokstavs förklaring
 v= verision
 s= kan skipa
-}blir inte läst
+} i mellan blir och det här inte läst
