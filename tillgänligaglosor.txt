@@ -1,3 +1,4 @@
 jullov.:/glosor/jullov.txt:;
-v5-v6.:/glosor/v4-v5.txt:;
+v4-v5.:/glosor/v4-v5.txt:;
+v5-v6.:/glosor/v5-v6.txt:;
 %
