@@ -1,0 +1,100 @@
+/* Styles for main content */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Styles for dropdown menu */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+}
+nav ul li {
+    float: left;
+    position: relative;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: #111;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333; /* Changed dropdown background color */
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a {
+    color: white; /* Changed dropdown text color */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #111; /* Changed hover background color */
+}
+
+
+/* Styles for footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact li {
+    margin-bottom: 10px;
+}
+
+.contact li::before {
+    content: "•";
+    color: #333; /* Change color as needed */
+    margin-right: 10px;
+}
+
+.contact a {
+    color: black;
+    text-decoration: none;
+}
