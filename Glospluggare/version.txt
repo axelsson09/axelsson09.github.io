@@ -1,7 +1,7 @@
-v6.0.0&s0%
+v6.1.0&s0%
 
 
-{
+
 bokstav = förklaring
 & = ny funktion
 % slut på funktioner /sluta läs
@@ -9,4 +9,4 @@ bokstav = förklaring
 bokstavs förklaring
 v= verision
 s= kan skipa
-} i mellan blir och det här inte läst
+i mellan blir och det här inte läst
