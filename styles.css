@@ -24,49 +24,72 @@ body {
     margin-bottom: 30px;
 }
 
-/* Styles for dropdown menu */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #333;
+/* The navigation menu */
+.navbar {
     overflow: hidden;
-}
-nav ul li {
+    background-color: #333;
+  }
+  
+  /* Navigation links */
+  .navbar a {
     float: left;
-    position: relative;
-}
-nav ul li a {
-    display: block;
+    font-size: 16px;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
-nav ul li a:hover {
-    background-color: #111;
-}
-.dropdown-content {
+  }
+  
+  /* The subnavigation menu */
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Subnav button */
+  .subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Add a red background color to navigation links on hover */
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: #646464;
+  }
+  
+  /* Style the subnav content - positioned absolute */
+  .subnav-content {
     display: none;
     position: absolute;
-    background-color: #333; /* Changed dropdown background color */
-    min-width: 160px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    left: 0;
+    background-color: #646464;
+    width: 100%;
     z-index: 1;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-.dropdown-content a {
-    color: white; /* Changed dropdown text color */
-    padding: 12px 16px;
+  }
+  
+  /* Style the subnav links */
+  .subnav-content a {
+    float: left;
+    color: white;
     text-decoration: none;
+  }
+  
+  /* Add a grey background color on hover */
+  .subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+  
+  /* When you move the mouse over the subnav container, open the subnav content */
+  .subnav:hover .subnav-content {
     display: block;
-}
-.dropdown-content a:hover {
-    background-color: #111; /* Changed hover background color */
-}
-
+  }
 
 /* Styles for footer */
 footer {

@@ -8,7 +8,7 @@ function searchError() {
         if (xhr.readyState === 4) {
             if (xhr.status === 404) {
                 // Error page not found, show alert
-                alert("Error page not found!");
+                alert("Error code not found! See if it is entered correctly, otherwise contact support.");
             } else {
                 // Error page found, redirect to it
                 window.location.href = "errors/" + errorCode + ".html";

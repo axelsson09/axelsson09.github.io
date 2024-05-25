@@ -1,0 +1,68 @@
+User Input Errors:
+E1001: Invalid character input
+E1002: Empty input field
+E1003: Exceeded maximum input length
+E1004: Unsupported language input
+
+Network Errors:
+E2001: Network connection lost
+E2002: Server not responding
+E2003: Timeout while connecting to the server
+E2004: Failed to fetch data from the server
+
+Authentication Errors:
+E3001: Invalid username or password
+E3002: Account locked due to multiple failed login attempts
+E3003: Session expired
+E3004: Unauthorized access attempt
+
+Database Errors:
+E4001: Database connection failed
+E4002: Data not found
+E4003: Data insertion failed
+E4004: Data update failed
+E4005: Data deletion failed
+
+Application Logic Errors:
+E5001: Incorrect answer submission
+E5002: Level progression error
+E5003: Missing required fields
+E5004: Invalid data format
+E5005: Resource not available
+
+File Handling Errors:
+E6001: File not found
+E6002: File upload failed
+E6003: Unsupported file format
+E6004: File read/write error
+
+System Errors:
+E7001: Insufficient memory
+E7002: CPU overload
+E7003: Unexpected application crash
+E7004: Incompatible system requirements
+
+API Errors:
+E8001: API key invalid or missing
+E8002: API request limit exceeded
+E8003: API endpoint deprecated
+E8004: API response malformed
+
+User Account Errors:
+E9001: User profile not found
+E9002: Profile update failed
+E9003: Invalid email format
+E9004: Password strength requirements not met
+
+Localization Errors:
+E10001: Translation missing for selected language
+E10002: Locale data load failure
+E10003: Unsupported locale
+E10004: Date/time format error for locale
+
+Miscellaneous Errors:
+E11001: Feature not implemented
+E11002: Invalid configuration setting
+E11003: Dependency missing or incompatible
+
+
