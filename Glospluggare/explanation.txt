@@ -13,5 +13,5 @@ andra delen tyska
 & =slut på glosor
 
 internaglosor
-0 =från wevserver
+0 =från webserver
 1 =internaglosor
