@@ -1,4 +1,5 @@
 jullov.:/glosor/jullov.txt:;
 v4-v5.:/glosor/v4-v5.txt:;
 v5-v6.:/glosor/v5-v6.txt:;
+engelska v.40.:/glosor/engelska v.40.txt:;
 %
