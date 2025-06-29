@@ -1,0 +1,132 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #111;
+    color: #f5f5f5;
+    font-size: 16px;
+}
+
+a {
+    color: #4fc3f7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+    color: #80d4ff;
+    outline: none;
+}
+
+.container {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+header, footer {
+    background-color: #222;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.subnavbtn {
+    background: none;
+    border: none;
+    color: #4fc3f7;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.subnavbtn:hover,
+.subnavbtn:focus {
+    background-color: #4fc3f7;
+    color: #111;
+    outline: none;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    background-color: #222;
+    min-width: 160px;
+    z-index: 1;
+    padding: 0.5rem 0;
+    border-radius: 4px;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+.subnav-content a {
+    color: #f5f5f5;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+.subnav-content a:hover {
+    background-color: #4fc3f7;
+    color: #111;
+}
+
+blockquote {
+    font-style: italic;
+    color: #bbb;
+    border-left: 4px solid #4fc3f7;
+    padding-left: 1em;
+    margin: 1.5rem 0;
+}
+
+.github-stats {
+    margin-top: 40px;
+    align-content: center;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+    .subtitle, .fun-fact {
+        font-size: 1rem;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .navbar a, .subnavbtn {
+        padding: 12px 10px;
+        font-size: 1.1rem;
+        border-bottom: 1px solid #444;
+    }
+    .subnav-content a {
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.5rem;
+    }
+    .subtitle, .fun-fact {
+        font-size: 0.9rem;
+    }
+    .navbar a, .subnavbtn {
+        font-size: 1rem;
+        padding: 10px 8px;
+    }
+}

@@ -1,51 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Axelsson09's World - Home</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 <body>
     <header>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<div class="navbar">
-  <a href="index.html">Home</a>
-  <div class="subnav">
-    <button class="subnavbtn">Projects <i class="fa fa-caret-down"></i></button>
-    <div class="subnav-content">
-      <a href="https://gamemodstudios.github.io/">Gamemodstudios</a>
-      <a href="/Glospluggare/">Glospluggare</a>
-      <a href="" style="display: none;"></a>
-    </div>
-  </div>
-  <div class="subnav">
-    <a href="/About Me.html">About Me </a>
-  </div>
-  <div class="subnav">
-    <button class="subnavbtn">Partners <i class="fa fa-caret-down"></i></button>
-    <div class="subnav-content">
-      <a href="#link1">Link 1</a>
-      <a href="#link2">Link 2</a>
-      <a href="#link3">Link 3</a>
-      <a href="#link4">Link 4</a>
-    </div>
-  </div>
-  <a href="/Contact.html">Contact</a>
-</div>
+        <nav class="navbar" role="navigation" aria-label="Main Navigation">
+            <a href="/" aria-current="page">Home</a>
+            <div class="subnav" aria-haspopup="true" aria-expanded="false">
+                <button class="subnavbtn" aria-controls="projects-menu" aria-haspopup="true" aria-expanded="false">
+                    Projects <i class="fa fa-caret-down"></i>
+                </button>
+                <div id="projects-menu" class="subnav-content" role="menu">
+                    <a href="https://gamemodstudios.github.io/" role="menuitem" tabindex="-1">Gamemodstudios</a>
+                    <a href="https://glospluggare.github.io/" role="menuitem" tabindex="-1">Glospluggare (Work in Progress)</a>
+                </div>
+            </div>
+            <a href="/about-me/" class="active">About Me</a>
+        </nav>
     </header>
-    <div class="hero-image">
-  <div class="hero-text">
-    <div class="title">Welcome to Axelsson09's World</div>
-    <div class="subtitle">Hey there! 👋 I'm Axelsson09, a multi-talented creator and problem-solver based in Sweden.</div>
-    <div class="fun-fact">⚡ Fun Fact: I started my own gaming company at just 15 years old!</div>
-    
-    <div></div>
-  </div>
-  <footer>
-      <p>&copy; 2025 Axelsson09's World. All rights reserved.</p>
-  </footer>
+
+    <main class="hero-image" role="main" aria-label="Introduction Section">
+        <section class="hero-text">
+            <h1 class="title">Welcome to Axelsson09's World</h1>
+            <p class="subtitle">Hey there! 👋 I'm Axelsson09, a multi-talented creator and problem-solver based in Sweden.</p>
+            <p class="fun-fact">⚡ Fun Fact: I started my own gaming company at just 15 years old!</p>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2025 Axelsson09's World. All rights reserved.</p>
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+    const subnavBtn = document.querySelector('.subnavbtn');
+    const subnavContent = document.querySelector('.subnav-content');
+
+    subnavBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const isShown = subnavContent.style.display === 'flex';
+        subnavContent.style.display = isShown ? 'none' : 'flex';
+        subnavBtn.setAttribute('aria-expanded', !isShown);
+    });
+
+    // Optional: close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!subnavBtn.contains(e.target) && !subnavContent.contains(e.target)) {
+            subnavContent.style.display = 'none';
+            subnavBtn.setAttribute('aria-expanded', false);
+        }
+    });
+});
+</script>
+
 </body>
 </html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Axelsson09 Website">
+    <title>About Axelsson09</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header>
+        <nav class="navbar">
+            <a href="/">Home</a>
+            <div class="subnav">
+                <button class="subnavbtn">Projects <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <a href="https://gamemodstudios.github.io/">Gamemodstudios</a>
+                    <a href="https://glospluggare.github.io/">Glospluggare (Work in Progress)</a>
+                </div>
+            </div>
+            <a href="/about-me/" class="active">About Me</a>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+        <section class="profile-header" style="text-align: center;">
+            <img src="https://avatars.githubusercontent.com/u/121717620?v=4" alt="Axelsson09 Avatar" style="border-radius: 50%; width: 150px; margin-bottom: 20px;">
+            <h1>👋 Hey, I'm Axelsson09!</h1>
+            <p class="tagline">🎮 Gamer | 💻 Programmer | 🧠 Creative Thinker | 🕹️ Founder of 
+                <a href="https://gamemodstudios.github.io/" target="_blank">Gamemodstudios</a>
+            </p>
+        </section>
+
+        <section class="bio">
+            <p>
+                I'm William Axelsson, better known online as <strong>Axelsson09</strong>. I'm a passionate developer and tech enthusiast based in Sweden, born in 2009.
+                My journey began with game modding, and at just 14, I launched <strong>Gamemodstudios</strong> — a studio dedicated to immersive, moddable experiences.
+            </p>
+
+            <p>
+                Gamemodstudios thrives on collaboration, creativity, and user empowerment. Our core belief? The best games invite the community to shape them. I'm here to make that easier and more exciting.
+            </p>
+
+            <p>
+                When I'm not coding or designing, you’ll find me testing new tools, innovating with the team, or engaging with our awesome modding community.
+            </p>
+
+            <p><strong>Tech Stack:</strong> Unity, C#, Java, HTML/CSS, JavaScript, Ionic, Git, Blender, Supabase, and more.</p>
+
+            <blockquote>“Start with curiosity, build with passion, and always leave room for play.”</blockquote>
+        </section>
+
+        <section class="github-stats">
+            <h2>📊 GitHub Stats</h2>
+            <img src="https://github-readme-stats.vercel.app/api?username=Axelsson09&show_icons=true&theme=tokyonight&hide_border=false" alt="GitHub Stats" style="max-width: 100%; margin-bottom: 10px;">
+            <img src="https://github-readme-streak-stats.herokuapp.com?user=Axelsson09&theme=tokyonight&hide_border=false" alt="GitHub Streak" style="max-width: 100%;">
+        </section>
+
+        <section class="social-links" style="text-align: center; margin-top: 40px;">
+            <p>🌐 Let's connect and create something amazing together!</p>
+            <p>
+                <a href="https://github.com/Axelsson09" target="_blank">GitHub</a> | 
+                <a href="https://www.youtube.com/channel/UCO38Am_K83ZPslZDge1hGLA" target="_blank">YouTube</a> | 
+                <a href="https://www.twitch.tv/axelsson0901" target="_blank">Twitch</a> | 
+                <a href="mailto:william09.axelsson@gmail.com">Email Me</a>
+            </p>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Axelsson09's World. All rights reserved.</p>
+    </footer>
+
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+    const subnavBtn = document.querySelector('.subnavbtn');
+    const subnavContent = document.querySelector('.subnav-content');
+
+    subnavBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const isShown = subnavContent.style.display === 'flex';
+        subnavContent.style.display = isShown ? 'none' : 'flex';
+        subnavBtn.setAttribute('aria-expanded', !isShown);
+    });
+
+    // Optional: close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!subnavBtn.contains(e.target) && !subnavContent.contains(e.target)) {
+            subnavContent.style.display = 'none';
+            subnavBtn.setAttribute('aria-expanded', false);
+        }
+    });
+});
+</script>
+
+</body>
+</html>
